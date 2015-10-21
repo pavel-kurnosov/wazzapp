@@ -18,15 +18,15 @@ function config($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    //.state('tab.chat-detail', {
-    //  url: '/chats/:chatId',
-    //  views: {
-    //    'tab-chats': {
-    //      templateUrl: 'client/templates/chat-detail.ng.html',
-    //      controller: 'ChatDetailCtrl'
-    //    }
-    //  }
-    //});
+    .state('tab.chat-detail', {
+      url: '/chats/:chatId',
+      views: {
+        'tab-chats': {
+          templateUrl: 'client/templates/chat-detail.ng.html',
+          controller: 'ChatDetailCtrl'
+        }
+      }
+    });
 
   $urlRouterProvider.otherwise('tab/chats');
 }
