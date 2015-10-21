@@ -32,11 +32,11 @@ function config($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    //.state('login', {
-    //  url: '/login',
-    //  templateUrl: 'client/templates/login.ng.html',
-    //  controller: 'LoginCtrl'
-    //});
+    .state('login', {
+      url: '/login',
+      templateUrl: 'client/templates/login.ng.html',
+      controller: 'LoginCtrl'
+    });
 
   $urlRouterProvider.otherwise('tab/chats');
 }
