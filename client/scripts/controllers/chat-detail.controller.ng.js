@@ -57,4 +57,9 @@ function ChatDetailCtrl($scope, $stateParams, $ionicScrollDelegate, $timeout, $m
     // cordova.plugins.Keyboard.close();
   }
 
+  //
+  //$scope.$watchCollection('messages', function (oldVal, newVal) {
+  //  var animate = oldVal.length !== newVal.length;
+  //  $ionicScrollDelegate.$getByHandle('chatScroll').scrollBottom(animate);
+  //});
 }
