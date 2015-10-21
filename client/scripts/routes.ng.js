@@ -1,5 +1,5 @@
 angular
-  .module('wazzap')
+  .module('wazzapp')
   .config(config);
 
 function config($stateProvider, $urlRouterProvider) {
@@ -13,7 +13,8 @@ function config($stateProvider, $urlRouterProvider) {
       url: '/chats',
       views: {
         'tab-chats': {
-          templateUrl: 'client/templates/chats.ng.html'
+          templateUrl: 'client/templates/chats.ng.html',
+          controller: 'ChatsCtrl'
         }
       }
     });
