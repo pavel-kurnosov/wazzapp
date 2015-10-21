@@ -11,7 +11,7 @@ function config($stateProvider, $urlRouterProvider) {
       resolve: {
         user: ['$meteor', function ($meteor) {
           return $meteor.requireUser();
-        tep}]
+        }]
         //,
         //chats: ['$meteor', function ($meteor) {
         //  return $meteor.subscribe('chats');
