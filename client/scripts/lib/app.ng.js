@@ -1,7 +1,8 @@
 angular
   .module('wazzapp', [
     'angular-meteor',
-    'ionic'
+    'ionic',
+    'angularMoment'
   ]);
 
 if (Meteor.isCordova) {
