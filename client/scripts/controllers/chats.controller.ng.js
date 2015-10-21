@@ -4,6 +4,7 @@ angular
 
 function ChatsCtrl ($scope) {
 
+  // $scope.$meteorCollection(Chats, false);
   $scope.chats = [
     {
       _id: 0,
@@ -53,6 +54,7 @@ function ChatsCtrl ($scope) {
   ];
 
   $scope.remove = function (chat) {
+    // $scope.chats.remove(chat);
     $scope.chats.splice($scope.chats.indexOf(chat), 1);
   };
 }
