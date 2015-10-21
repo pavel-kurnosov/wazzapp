@@ -1,5 +1,5 @@
 angular
-  .module('Wazzapp', [
+  .module('wazzap', [
     'angular-meteor',
     'ionic'
   ]);
@@ -11,5 +11,5 @@ if (Meteor.isCordova) {
 }
 
 function onReady() {
-  angular.bootstrap(document, ['Wazzapp']);
+  angular.bootstrap(document, ['wazzap']);
 }
