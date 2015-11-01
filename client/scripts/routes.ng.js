@@ -12,10 +12,10 @@ function config($stateProvider, $urlRouterProvider) {
         user: ['$meteor', function ($meteor) {
           return $meteor.requireUser();
         }]
-        //,
-        //chats: ['$meteor', function ($meteor) {
-        //  return $meteor.subscribe('chats');
-        //}]
+        ,
+        chats: ['$meteor', function ($meteor) {
+          return $meteor.subscribe('chats');
+        }]
       }
     })
     .state('tab.chats', {
